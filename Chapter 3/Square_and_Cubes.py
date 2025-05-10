@@ -3,5 +3,7 @@
 print('number\tsquare\tcube')
 
 
-for square in range(1, 6, *2):
-	print(square, end = ' ')
+for i in range(0, 3):
+	for j in range(0, 3):
+		print(f'{i:>5}', i * i, i * i * i, end = (f'{i:>2}'))
+	print(' ')
