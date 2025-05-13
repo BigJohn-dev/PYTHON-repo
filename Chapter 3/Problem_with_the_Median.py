@@ -1,12 +1,20 @@
 # Problem with the Median
+import statistics
 
-Values = [9, 11, 22, 34, 17, 22, 34, 22, 40]
+Values = [9, 11, 22, 34, 17, 22, 34, 22, 40, 34]
 
 Values.sort()
 print(Values)
 
-if Values[] % 2 != 0:
-	print(f'The middle number is {Values[4]}')
-else:
-	average = (Values[4] + Values[5]) / 2
-	print(f'The average of the two middle values is {average}')
+n = len(Values)
+
+if n % 2 != 0:
+	median = Values[n // 2]
+	print(f'The middle number is {median}')
+else:	
+	middle_number = n // 2
+	median = statistics.mean(Values[middle_number-1:middle_number+1])
+	print(f'The average of the two middle values is {median}')
+
+
+    
