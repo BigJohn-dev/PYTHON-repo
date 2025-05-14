@@ -1,17 +1,15 @@
+"""
 import statistics
 
-# Intro to Data Science: Mean, Median and Mode
+values = {11, 21, 31, 61, 41, 14, 13}
 
-Values = [9, 11, 22, 34, 17, 22, 34, 22, 40, 34]
-Values.sort()
+values.sort()
 
-print(Values)
+print(values)
 
-mean = statistics.mean(Values)
+mean = statistics.mean(values)
+median = statistics.median(values)
+mode = statistics.mode(values)
 
-median = statistics.median(Values)
-
-mode = statistics.mode(Values)
-
-print(f'Mean is: {mean}, Median is: {median}, Mode is: {mode}')
-
+print(f'The mean {mean} median {median} mode {mode}')
+"""

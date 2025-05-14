@@ -1,6 +1,4 @@
-# fill in the missing code
-
-for row in range(2):
+for row in range(4):
 	for column in range(7):
-		print('@', end = '')
+		print('@', end = ' ')
 	print()
