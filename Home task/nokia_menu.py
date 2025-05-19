@@ -846,5 +846,15 @@ match phonebook_options:
 		print(tenth)
 
 
+# Eleventh option from list of Menu functions
 
+	case 11:
+		eleventh = """
+		    CLOCK
 
+   1. Alarm clock		2. Clock settings
+   3. Date settings		4. Stopwatch
+   5. Countdown timer		6. Auto update of date and time
+   0. Back
+		"""
+		print(eleventh)

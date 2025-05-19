@@ -860,7 +860,7 @@ match phonebook_options:
 		print(eleventh)
 		"""
 		settings_options = int(input('Enter option: '))
-
+"""
 # Sub option for Clock
 		match Clock_options:
 			case 1:
@@ -871,9 +871,6 @@ match phonebook_options:
 				"""
 				print(clock_1)
 
-
-
-"""
 			case 2:
 				clock_2 = """
 	CLOCK SETTINGS
