@@ -1,14 +1,10 @@
 # Dividing a category of numbers
 
 def categorize_numbers(numbers, divisor):
-	divisibles = []
-	for number in numbers:
-		if number % divisor == 0:
-			divisibles.append(number)
+	if divisor == 0:
+		raise ValueError("No divisible number found")
 
-	if divisibles == 0:
-		return "No divisible number found"
-	else:
-		return divisibles
+	return [num for num in numbers if num % divisor == 0]
 
-print(categorize_numbers([10, 15, 21, 30], 5))
+print(categorize_numbers(10, 15, 21, 30}, -3))
+

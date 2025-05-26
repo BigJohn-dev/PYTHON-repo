@@ -61,8 +61,8 @@ class Bank:
 		account = self.get_account(account_number)
 		if account and account.name == name:
 			account.password = new_password
-			return f"Password reset successfully for {name}"
-		return "Account not found or name does not match"
+			return f"\nPassword reset successfully for {name}"
+		return "\nAccount not found or name does not match"
 
 def main():
 	bank = Bank()
@@ -109,7 +109,7 @@ WELCOME TO PYTHON BANK
 
 			elif user_choice == 4:
 				print("...thank you for banking with us!")
-				print("...PYTHON BANK")
+				print("...@PYTHON BANK")
 				break
 
 			else:
@@ -121,6 +121,7 @@ WELCOME TO PYTHON BANK
 			choice = input("\nChoose an option: ")
 
 			if choice == "1":
+				password = input("Enter your password: ")
 				print(bank.current_user.check_balance())
 
 			elif choice == "2":
