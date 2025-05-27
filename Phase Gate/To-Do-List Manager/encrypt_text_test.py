@@ -1,5 +1,5 @@
 import unittest
-import encryot_text
+import encrypt_text
 
 class TestEncrypt_text(unittest.TestCase):
 
