@@ -11,7 +11,7 @@ class to_do_task:
 
 	def add_task(self, task):
 		if task != " ":
-			self.add_task += task
+			self.add_task += [task]
 			return "New Task added"
 		else:
 			return "No task added"
