@@ -28,7 +28,7 @@ class to_do_task:
 class task_manager:
 	
 	def __init__(self):
-		self.tasks = {}
+		self.tasks = []
 
 	def add_task(self, add_task):
 		if add_task not in self.tasks:
@@ -71,7 +71,7 @@ def main():
 			print("ADD A TASK")
 			Task = input("Enter task you want add: ")
 			if Task != " ":
-				tasks.append(tasks)
+				tasks.append(Task)
 			print(task.to_do_task(Task, add_task))
 
 		elif choice == "2":
