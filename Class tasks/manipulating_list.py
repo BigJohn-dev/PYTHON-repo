@@ -10,36 +10,36 @@ def print_array():
 
 def array_length(values):
     length = 0
-    for i in values:
+    for _ in values:
         length += 1
     return length
 
 def sum_of_even_numbers(values):
     sum = 0
-    for number in values:
-        if array_length(values) % 2 == 0:
-            sum += number
-            return sum
+    for number in range(array_length(values)):
+        if number % 2 != 0:
+            sum += values[number]
+    return sum
 
 def sum_of_odd_numbers(values):
     sum = 0
-    for number in values:
-        if array_length(values) % 2 == 1:
+    for number in range(array_length(values)):
+        if number % 2 == 0:
             sum += values[number]
-            return sum
+    return sum
 
 def multiply_elements_at_third_position(values):
     multiply = 1
-    for number in range(0, array_length(values), 3):
+    for number in range(2, array_length(values), 3):
         multiply *= values[number]
-        return multiply
+    return multiply
 
 def average_of_all_element(values):
     sum = 0
     for number in values:
         sum += number
         total = sum / array_length(values)
-        return total
+    return total
 
 
 print(f"The elements in the array are: {print_array()}")
