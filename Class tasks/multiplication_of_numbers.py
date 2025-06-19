@@ -1,5 +1,5 @@
 # Multiplication of numbers
-"""
+
 def multiply (a, b):
 	result = 0
 	for i in range (b):
@@ -7,8 +7,7 @@ def multiply (a, b):
 	
 	return result 
 print(multiply(2, 5))
-"""
 
-def multiply
+
 
       
