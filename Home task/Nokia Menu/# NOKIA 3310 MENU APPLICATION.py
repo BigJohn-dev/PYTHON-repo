@@ -697,7 +697,15 @@ match phonebook_options:
 						option_6_II = """
    CELL INFO DISPLAY
 
-	0. Back
+   Device_name: NOKIA 3310
+   Battery: Removable 900 mAh (BMC-3)
+   Display: 84x48 pixel monochrome LCD, no backlight.
+   Operating System: Nokia Series 20, proprietary OS.
+   Network: 2G (GSM 900/1800).
+   Dimensions and : 113 x 48 x 22 mm.
+   Weight: 133g (including battery).
+	
+   0. Back
 						"""
 						print(option_6_II)
 						
@@ -820,20 +828,110 @@ match phonebook_options:
 	case 8:
 		eighth = """
          GAMES
-		
-	0. Back
+   1. Snake II		2. Space Impact
+   3. Bantumi		4. Pairs II
+   0. Back
 		"""
 		print(eighth)
+		Games_options = int(input('Enter option: '))
+
+# Sub option for Games
+		match Games_options:
+			case 1:
+				Game_1 = """
+	 SNAKE II
+	     ~
+	...coming soon
+				"""
+				print(Game_1)
+
+			case 2:
+				Game_2 = """
+	SPACE IMPACT
+
+	...comming soon
+				"""
+				print(Game_2)
+
+			case 3:
+				Game_3 = """
+	  BANTUMI
+
+	...coming soon
+				"""
+				print(Game_3)
+
+			case 4:
+				Game_4 = """
+	PAIRS II
+
+	...coming coon
+				"""
+				print(Game_4)
 
 # Nineth option from list of Menu functions
 
 	case 9:
 		nineth = """
        CALCULATOR
-		
-	0. Back
+
+   1. Addition		2. Subtraction	
+   3. Multiplication	4. Division
+   0. Back
 		"""
 		print(nineth)
+		Calculator_options = int(input('Enter option: '))
+
+# Sub option for Calculator
+		match Calculator_options:
+			case 1:
+				add_1 = """
+	 ADDITION
+	    
+   ...add any number(s)
+				"""
+				print(add_1)
+				n1 = int(input())
+				n2 = int(input())
+
+				sum = n1 + n2
+				print(sum)
+			case 2:
+				minus_2 = """
+	SUBTRACTION
+
+  ...find the difference
+				"""
+				print(minus_2)
+				n1 = int(input())
+				n2 = int(input())
+
+				diff = n1 - n2
+				print(diff)
+			case 3:
+				times_3 = """
+	MULTIPLICATION
+
+    ...multiplying numbers
+				"""
+				print(times_3)
+				n1 = int(input())
+				n2 = int(input())
+
+				times = n1 * n2
+				print(times)
+			case 4:
+				divide_4 = """
+	DIVISION
+
+   ...dividing numbers
+				"""
+				print(divide_4)
+				n1 = int(input())
+				n2 = int(input())
+
+				sum = n1 + n2
+				print(sum)
 
 # Tenth option from list of Menu functions
 
@@ -847,73 +945,89 @@ match phonebook_options:
 
 
 # Eleventh option from list of Menu functions
-
 	case 11:
 		eleventh = """
-		    CLOCK
+        CLOCK
 
-   1. Alarm clock		2. Clock settings
-   3. Date settings		4. Stopwatch
-   5. Countdown timer		6. Auto update of date and time
+   1. Alarm clock        2. Clock settings
+   3. Date settings      4. Stopwatch
+   5. Countdown timer    6. Auto update of date and time
    0. Back
 		"""
 		print(eleventh)
-		"""
-		settings_options = int(input('Enter option: '))
-"""
+		clock_options = int(input('Enter option: '))
+
 # Sub option for Clock
-		match Clock_options:
+		match clock_options:
 			case 1:
-				clock_1 = """
-	ALARM CLOCK
-		
-	  0. Back
-				"""
-				print(clock_1)
+            			clock_1 = """
+    ALARM CLOCK
+        
+      0. Back
+           			"""
+            			print(clock_1)
 
 			case 2:
-				clock_2 = """
-	CLOCK SETTINGS
-		
-	   0. Back
-				"""
-				print(clock_2)
+            			clock_2 = """
+    CLOCK SETTINGS
+        
+       0. Back
+            			"""
+            			print(clock_2)
 
 			case 3:
-				clock_3 = """
-	DATE SETTINGS
-		
-	   0. Back
-				"""
-				print(clock_3)
+            			clock_3 = """
+    DATE SETTINGS
+        
+       0. Back
+            			"""
+            			print(clock_3)
 
 			case 4:
-				clock_4 = """
-	  STOPWATCH
-		
-	   0. Back
-				"""
-				print(clock_4)
+            			clock_4 = """
+      STOPWATCH
+        
+       0. Back
+            			"""
+            			print(clock_4)
 
 			case 5:
-				clock_5 = """
-	COUNTDOWN TIMER
-		
- 	    0. Back
-				"""
-				print(clock_5)
+            			clock_5 = """
+    COUNTDOWN TIMER
+        
+       0. Back
+           			"""
+            			print(clock_5)
 
 			case 6:
-				clock_6 = """
+            			clock_6 = """
    AUTO UPDATE OF DATE AND TIME
-		
-	    0. Back
-				"""
-				print(clock_6)
+        
+        0. Back
+            			"""
+            			print(clock_6)
 
+	case 12:
+		twelevth = """
 
+	      PROFILES
 
-"""
+   1. General		2. Silent
+   3. Meeting		4. Vibration
+   0. Back
+		"""
+		print(twelevth)
+
+	case 13:
+		thirteenth = """
+
+	SIM SERVICES	
+					
+	  0. Back
+		"""
+		print(thirteenth)
+
+	case _: print('Enter the valid input')
 
 
 

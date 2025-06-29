@@ -11,10 +11,10 @@ def seconds_since_midnight(hour, minutes, seconds):
 		return'Invalid input for seconds'
 
 	else:
-		seconds_since_midnight = 0
-		hour_in_seconds = hour * 60
+		hour_in_seconds = hour * 3600
 		minute_in_seconds = minutes * 60
-		seconds_since_midnight += seconds + hour_in_seconds + minute_in_seconds
-		return seconds_since_midnight
+		output = seconds + hour_in_seconds + minute_in_seconds
 
-print(seconds_since_midnight(0, 0, 45))
+		return output
+
+print(seconds_since_midnight(1, 30, 45))
