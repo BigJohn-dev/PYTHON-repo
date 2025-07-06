@@ -5,7 +5,7 @@ maximum = None
 minimum = None
 
 for i in range(1, 5):
-    number = int(input(f"Enter value for number{i}: "))
+    number = int(input(f"Enter value for number {i}: "))
     total += number
 
     if maximum is None or number > maximum:

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # This show the value of variable x and y
 
 x = 2
@@ -9,15 +7,6 @@ print('x =', x)
 print('Value of', x, '+', x, 'is', (x + x))
 print('x =')
 print((x + y), '=', (y + x))
-=======
 
-# This show the value of variable x and y
 
-x = 2
-y = 3
 
-print('x =', x)
-print('Value of', x, '+', x, 'is', (x + x))
-print('x =')
-print((x + y), '=', (y + x))
->>>>>>> origin/main
