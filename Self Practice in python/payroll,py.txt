@@ -1,0 +1,45 @@
+# Employees Payroll
+
+class payroll:
+
+	def gross_pay(double amount, double time) {
+	double grosspay = amount * time;
+	return grosspay;
+}
+	public static double federalTax(double amount) {
+	double tax = amount * 0.20;
+	return tax;
+}
+	public static double stateTax(double amount) {
+	double tax = amount * 0.09;
+	return tax;
+}
+
+	public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+
+	System.out.println("WELCOME TO PAYROLL");
+	
+	System.out.print("Enter employee's name: ");
+	String name = input.next();
+
+	System.out.print("Enter number of hours worked in a week: ");
+	double time = input.nextDouble();
+	
+	System.out.print("Enter hourly pay rate: ");
+	double rate = input.nextDouble();
+
+	System.out.println("\nEmployee Name: " + name);
+	System.out.println("Hours worked: " + time);
+	System.out.println("Pay Rate: $" + rate);
+	System.out.println("Gross Pay: $" + grossPay(time, rate));
+
+	System.out.println("\nDeductions:");
+	System.out.println("Federal Withholding (20.0%): $" + federalTax(grossPay(time, rate)));
+	System.out.println("Federal Withholding (9%): $" + stateTax(grossPay(time, rate)));
+	System.out.println("Total deductions: $" + (stateTax(grossPay(time, rate)) + federalTax(grossPay(time, rate))));
+
+	System.out.println("\nNet Pay: $" + (grossPay(time, rate) - (stateTax(grossPay(time, rate)) + federalTax(grossPay(time, rate)))) );
+	
+}
+}
