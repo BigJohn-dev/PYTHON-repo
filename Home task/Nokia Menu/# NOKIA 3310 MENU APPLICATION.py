@@ -61,7 +61,7 @@ match phonebook_options:
 		  0. Back
 				"""
 				print(two)
-			
+
 			case 3:
 				three = """
 		   ADD NAME
@@ -109,12 +109,12 @@ match phonebook_options:
  1. Type of view		2. Memory status
  0. Back
 				"""
-				print(eight) 
+				print(eight)
 
 # sub option for phone book (option 8)
 				option_8 = int(input('Enter option: '))
 				match option_8:
-					case 1: 
+					case 1:
 						eight_one = """
 		TYPE OF VIEW
 		
@@ -179,7 +179,7 @@ match phonebook_options:
 				"""
 				print(Two)
 
-			case 3: 
+			case 3:
 				Three = """
 		   OUTBOX
 		
@@ -290,7 +290,7 @@ match phonebook_options:
 									print(Seven_two_three)
 
 
-			case 8: 
+			case 8:
 				Eight = """
 	         INFO SERVICE
 		
@@ -316,7 +316,7 @@ match phonebook_options:
 
 
 # Third option from list of Menu functions
-	case 3: 
+	case 3:
 		third = """
 		    CHAT
 		
@@ -386,7 +386,7 @@ match phonebook_options:
 
 # Sub option for Call register (option 5)
 				match call_register_option_5:
-					case 1: 
+					case 1:
 						option_5_one = """
 	    LAST CALL DURATION
 		
@@ -401,7 +401,7 @@ match phonebook_options:
 		  0. Back
 						"""
 						print(option_5_two)
-	
+
 					case 3:
 						option_5_three = """
 	  RECEIVED CALL'S DURATION
@@ -425,7 +425,7 @@ match phonebook_options:
 		0. Back
 						"""
 						print(option_5_five)
-					
+
 
 			case 6:
 				SIX = """
@@ -609,7 +609,7 @@ match phonebook_options:
 # Sub option for Settings
 
 		match settings_options:
-			case 1: 
+			case 1:
 				setting_1 = """
 	CALL SETTINGS
 
@@ -630,7 +630,7 @@ match phonebook_options:
 	0. Back
 						"""
 						print(option_6_1)
-					
+
 					case 2:
 						option_6_2 = """
     SPEED DIALLING
@@ -638,7 +638,7 @@ match phonebook_options:
 	0. Back
 						"""
 						print(option_6_2)
-						
+
 					case 3:
 						option_6_3 = """
     CALL WAITING OPTION
@@ -692,7 +692,7 @@ match phonebook_options:
 	0. Back
 						"""
 						print(option_6_I)
-					
+
 					case 2:
 						option_6_II = """
    CELL INFO DISPLAY
@@ -708,7 +708,7 @@ match phonebook_options:
    0. Back
 						"""
 						print(option_6_II)
-						
+
 					case 3:
 						option_6_III = """
    	WELCOME NOTE
@@ -763,7 +763,7 @@ match phonebook_options:
 	0. Back
 						"""
 						print(option_6_3a)
-					
+
 					case 2:
 						option_6_3b = """
    CALL BARRING SERVICE
@@ -771,7 +771,7 @@ match phonebook_options:
 	0. Back
 						"""
 						print(option_6_3b)
-						
+
 					case 3:
 						option_6_3c = """
      FIXED DIALLING
@@ -804,7 +804,7 @@ match phonebook_options:
 						"""
 						print(option_6_3f)
 
-			case 4: 
+			case 4:
 				setting_4 = """
 
 	RESTORE FACTORY SETTINGS
