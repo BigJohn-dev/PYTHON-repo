@@ -2,19 +2,19 @@ import re
 
  # Matches a U.S. phone number in the format 123-456-7890
 phone = "123-456-7890"
-# phone = "my account number is 0092455368"
-pattern = re.findall(r'^\d{3}-\d{3}-\d{4}$',phone)
+#phone = "0092455368"
+pattern = re.findall(r'\d{3}-\d{3}-\d{4}',phone)
 print(pattern)
 
-# An email: abc@gmail.com
-gmail = "Yemi@yemi@gmail.com"
+gmail = "abc@gmail.com"
+#gmail = "Yemi@yemi@gmail.com"
 # gmail = "tolu@gmail.com"
-patternII = re.findall(r'([a-z@0-9a-z.a-z]+)', gmail)
+patternII = re.findall(r'(^[\w@][a-z]+@gmail| yahoomail\.[a-z]+)', gmail)
 print(patternII)
 
 # Count and return words that starts with uppercase
 text = "Alice and Bob are Good Friends."
-pattern_III = re.findall(r'[A-Z]\w+', text)
+pattern_III = re.findall(r'\b[A-Z][a-z]+\b', text)
 print(pattern_III)
 
 # Split sentence into words ignoring punctuations
