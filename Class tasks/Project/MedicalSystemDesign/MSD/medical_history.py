@@ -1,4 +1,8 @@
-from MedicalSystemDesign.MSD.class_patient import Patient
+from __future__ import annotations
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from class_patient import Patient
 
 
 class MedicalHistory:
